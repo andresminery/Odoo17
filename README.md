@@ -11,8 +11,9 @@ Este es un tutorial paso a paso para instalar Odoo 17 en macOS. Odoo es una plat
 
 1. Abre la terminal.
 2. Instala Python 3 y PostgreSQL utilizando Homebrew ejecutando los siguientes comandos:
+Tambien se puede descargar la versión de python desde la pagina oficial
 ```bash
-brew install python3 postgresql
+brew install python@3.12
 ```
 ```bash
 brew services start postgresql 
@@ -36,15 +37,27 @@ source odoo-venv/bin/activate
 
 1. Asegúrate de que estás en el entorno virtual activado.
 2. Actualiza pip:
-
 ```bash
 pip install --upgrade pip
 ```
-3. Instala Odoo 17:
-
+3. Clonar repositorio de Odoo 17:
 ```bash
-pip install odoo
+git clone --branch 17 https://github.com/odoo/odoo.git --depth 1
 ```
+4. Ingresar a la carpeta de Odoo:
+```bash
+cd odoo
+```
+5. Instalar los requerimientos de Odoo 17:
+```bash
+pip3 install setuptools wheel
+```
+```bash
+pip3 install psycopg2-binary --no-cache-dir
+```
+```bash
+pip3 install -r requirement.txt
+```   
 
 ## Paso 4: Configurar Odoo
 
