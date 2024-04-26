@@ -83,8 +83,9 @@ cp ~/odoo-venv/lib/python3.x/site-packages/odoo/tools/config.py ~/odoo.conf
 ```bash
 source odoo-venv/bin/activate 
 ```
-
-2. Ejecuta Odoo con el siguiente comando, reemplazando '/ruta/a/tu/odoo.conf' con la ruta absoluta a tu archivo de configuración:
+2. Usar el archivo odoo.cfg que se encuentra en este mismo respositorio, puede crear el archivo y añadir el contenido correspondiente.
+3. Establecer el path de los extra-addons, el nombre de la base de datos, usuario de la base de datos y la contraseña.
+4. Ejecuta Odoo con el siguiente comando, reemplazando '/ruta/a/tu/odoo.conf' con la ruta absoluta a tu archivo de configuración:
 
 ```bash
 odoo -c /ruta/a/tu/odoo.conf
