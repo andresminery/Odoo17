@@ -10,8 +10,8 @@ Este es un tutorial paso a paso para instalar Odoo 17 en macOS. Odoo es una plat
 ## Paso 1: Instalar dependencias
 
 1. Abre la terminal.
-2. Instala Python 3 y PostgreSQL utilizando Homebrew ejecutando los siguientes comandos:
-Tambien se puede descargar la versión de python desde la pagina oficial
+2. Instala Python 3 y PostgreSQL utilizando Homebrew ejecutando los siguientes comandos,
+Tambien se puede descargar la versión de python desde la pagina oficial:
 ```bash
 brew install python@3.12
 ```
